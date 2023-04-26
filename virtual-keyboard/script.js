@@ -16,11 +16,13 @@ function renderKeys() {
 
   for (let i = 0; i < arrayOfKeys.length; i += 1) {
     for (let j = 1; j < arrayOfKeys[i].length; j += 1) {
+      const linekey = document.createElement('div');
       for (let k = 0; k < arrayOfKeys[i][j].length; k += 1) {
         const key = document.createElement('span');
         key.innerHTML = arrayOfKeys[i][j][k];
-        document.body.prepend(key);
+        linekey.append(key);
       }
+      document.body.append(linekey);
     }
   }
 }
