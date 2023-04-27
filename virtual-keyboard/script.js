@@ -1,4 +1,20 @@
-function renderKeys() {
+const renderLayout = () => {
+  const main = document.createElement('main');
+  main.classList.add('main');
+
+  const textfield = document.createElement('textarea');
+  textfield.classList.add('textfield');
+  main.append(textfield);
+
+  const keyboard = document.createElement('keyboard');
+  keyboard.classList.add('keyboard');
+  main.append(keyboard);
+
+  document.body.append(main);
+};
+renderLayout();
+
+const renderKeys = () => {
   const arrayOfKeysEN = ['EN',
     ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=', 'Backspace'],
     ['Tab', 'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', '[', ']', '\\', 'Del'],
@@ -25,6 +41,6 @@ function renderKeys() {
       document.body.append(linekey);
     }
   }
-}
+};
 
 renderKeys();
