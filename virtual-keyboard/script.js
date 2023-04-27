@@ -58,21 +58,27 @@ const renderKeys = () => {
 
 renderKeys();
 
-const zzz = document.createElement('div');
+const zzz = document.createElement('span');
 zzz.classList.add('keyboard__key');
+zzz.innerText = 'z';
 document.body.append(zzz);
+const textfield = document.querySelector('textarea');
 
 document.addEventListener('keydown', (e) => {
   if (e.code === 'KeyZ') {
     zzz.classList.add('zzz');
-    zzz.innerText = e.key;
-    const textfield = document.querySelector('textarea');
     textfield.value += e.key;
   }
 });
 document.addEventListener('keyup', (e) => {
   if (e.code === 'KeyZ') {
     zzz.classList.remove('zzz');
-    zzz.innerText = '';
   }
+});
+zzz.addEventListener('mousedown', () => {
+  textfield.value += 'z';
+  zzz.classList.add('zzz');
+});
+zzz.addEventListener('mouseup', () => {
+  zzz.classList.remove('zzz');
 });

@@ -5,6 +5,7 @@
 }
 
 .textfield {
+  padding: 12px;
   width: 80vw;
   height: 40vh;
   font-size: 20px;
@@ -37,8 +38,11 @@
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+  transition: border-radius .3s, background-color .3s;
 }
 .zzz {
-  border-color: red;
+  background-color: red;
 }
 
