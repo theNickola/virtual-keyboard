@@ -1,0 +1,29 @@
+[
+  {
+    "code": "Backquote",
+    "value": "`",
+    "valueShift": "~",
+    "isSymbol": "true",
+    "isDigit": "false",
+    "isLetter": "false",
+    "isService": "false"
+  },
+  {
+    "code": "Digit1",
+    "value": "`",
+    "valueShift": "~",
+    "isSymbol": "true",
+    "isDigit": "false",
+    "isLetter": "false",
+    "isService": "false"
+  },
+  {
+    "code": "Backquote",
+    "value": "`",
+    "valueShift": "~",
+    "isSymbol": "true",
+    "isDigit": "false",
+    "isLetter": "false",
+    "isService": "false"
+  }
+]

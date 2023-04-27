@@ -14,11 +14,12 @@
 
 .keyboard {
   margin-top: 7px;
-  width: 85vw;
+  width: 80vw;
   display: flex;
   flex-direction: column;
-  border: 2px solid rgb(139, 139, 139);
+  border: 2px solid #8b8b8b;
   border-radius: 5px;
+  background: #c8c8fd;
 }
 
 .keyboard__row {
@@ -29,9 +30,9 @@
 .keyboard__key {
   margin: 5px;
   height: 40px;
-  border: 3px solid rgb(88, 99, 255);
+  border: 3px solid #5863ff;
   border-radius: 3px;
-  background: rgb(135, 135, 255);
+  background: #8787ff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,6 +42,10 @@
   cursor: pointer;
   user-select: none;
   transition: .3s;
+}
+.keyboard__key_type_service {
+  background: #4545bd;
+  border-color: #000000;
 }
 .keyboard__key:hover {
   opacity: 0.5;
@@ -61,7 +66,7 @@
   width: 330px;
 }
 .keyboard__key_active {
-  color: azure;
-  border-radius: 50%;
+  color: #f0ffff;
+  border-radius: 20px;
   opacity: 0.5;
 }

@@ -15,22 +15,22 @@ const renderLayout = () => {
 renderLayout();
 
 class Key {
-  constructor(lang, value, shiftValue, isServiceKey) {
-    this.lang = lang;
+  constructor(code, value, valueShift, type) {
+    this.code = code;
     this.value = value;
-    this.shiftValue = shiftValue;
-    this.isServiceKey = isServiceKey;
+    this.valueShift = valueShift;
+    this.type = type;
   }
 }
 
-const renderKeys = () => {
-  const arrayOfKeysEN = ['EN',
-    [['`', '~'], ['1', '!'], ['2', '@'], ['3', '#'], ['4', '$'], ['5', '%'], ['6', '^'], ['7', '&'], ['8', '*'], ['9', '('], ['0', ')'], ['-', '_'], ['=', '+'], ['Backspace']],
-    [['Tab'], ['q', 'Q'], ['w', 'W'], ['e', 'E'], ['r', 'R'], ['t', 'T'], ['y', ''], ['u'], ['i'], ['o'], ['p'], ['['], [']'], ['\\'], ['Del']],
-    [['Caps Lock'], ['a'], ['s'], ['d'], ['f'], ['g'], ['h'], ['j'], ['k'], ['l'], [';'], ['\''], ['Enter']],
-    [['Shift'], ['z'], ['x'], ['c'], ['v'], ['b'], ['n'], ['m'], [','], ['.'], ['/'], ['▲'], ['Shift']],
-    [['Ctrl'], ['Win'], ['Alt'], ['Space'], ['Alt'], ['◄'], ['▼'], ['►'], ['Ctrl']]];
+const arrayOfKeysEN = [
+  [['Backquote', '`', '~', 'sym'], ['Digit1', '1', '!', 'dig'], ['Digit2', '2', '@', 'dig'], ['Digit3', '3', '#', 'dig'], ['Digit4', '4', '$', 'dig'], ['Digit5', '5', '%', 'dig'], ['Digit6', '6', '^', 'dig'], ['Digit7', '7', '&', 'dig'], ['Digit8', '8', '*', 'dig'], ['Digit9', '9', '(', 'dig'], ['Digit0', '0', ')', 'dig'], ['-', '_'], ['=', '+'], ['Backspace']],
+  [['Tab'], ['q', 'Q'], ['w', 'W'], ['e', 'E'], ['r', 'R'], ['t', 'T'], ['y', ''], ['u'], ['i'], ['o'], ['p'], ['['], [']'], ['\\'], ['Del']],
+  [['Caps Lock'], ['a'], ['s'], ['d'], ['f'], ['g'], ['h'], ['j'], ['k'], ['l'], [';'], ['\''], ['Enter']],
+  [['Shift'], ['z'], ['x'], ['c'], ['v'], ['b'], ['n'], ['m'], [','], ['.'], ['/'], ['▲'], ['Shift']],
+  [['Ctrl'], ['Win'], ['Alt'], ['Space'], ['Alt'], ['◄'], ['▼'], ['►'], ['Ctrl']]];
 
+const renderKeys = () => {
   const arrayOfKeysRU = ['RU',
     ['ё', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', '=', 'Backspace'],
     ['Tab', 'й', 'ц', 'у', 'к', 'е', 'н', 'г', 'ш', 'щ', 'з', 'х', 'ъ', '\\', 'Del'],
