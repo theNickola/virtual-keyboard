@@ -29,8 +29,9 @@
 .keyboard__key {
   margin: 5px;
   height: 40px;
-  border: 1px solid black;
+  border: 3px solid rgb(88, 99, 255);
   border-radius: 3px;
+  background: rgb(135, 135, 255);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,6 +41,9 @@
   cursor: pointer;
   user-select: none;
   transition: border-radius .3s, background-color .3s;
+}
+.keyboard__key:hover {
+  opacity: 0.9;
 }
 .keyboard__key_size_s {
   width: 40px;
@@ -57,5 +61,6 @@
   width: 330px;
 }
 .keyboard__key_active {
-  background-color: red;
+  opacity: 0.5;
+  color: azure;
 }
