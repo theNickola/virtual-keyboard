@@ -1,26 +1,44 @@
 .main {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .textfield {
   width: 80vw;
   height: 40vh;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .keyboard {
-  width: 90vw;
+  margin-top: 7px;
+  width: 85vw;
   display: flex;
   flex-direction: column;
+  border: 2px solid rgb(139, 139, 139);
+  border-radius: 5px;
 }
 
 .keyboard__row {
-  width: 90vw;
   display: flex;
   justify-content: space-between;
 }
 
-span {
+.keyboard__key {
+  margin: 5px;
   border: 1px solid black;
   border-radius: 3px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+.zzz {
+  border-color: red;
 }
 
