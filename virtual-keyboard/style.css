@@ -28,10 +28,9 @@
 
 .keyboard__key {
   margin: 5px;
+  height: 40px;
   border: 1px solid black;
   border-radius: 3px;
-  width: 40px;
-  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,7 +41,21 @@
   user-select: none;
   transition: border-radius .3s, background-color .3s;
 }
-.zzz {
+.keyboard__key_size_s {
+  width: 40px;
+}
+.keyboard__key_size_m {
+  width: 50px;
+}
+.keyboard__key_size_l {
+  width: 86px;
+}
+.keyboard__key_size_xl {
+  width: 100px;
+}
+.keyboard__key_size_xxl {
+  width: 330px;
+}
+.keyboard__key_active {
   background-color: red;
 }
-
