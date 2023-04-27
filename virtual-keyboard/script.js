@@ -60,29 +60,34 @@ renderKeys();
 
 const zzz = document.createElement('span');
 zzz.classList.add('keyboard__key', 'keyboard__key_size_s');
+zzz.id = 'KeyZ';
 zzz.innerText = 'z';
 document.body.append(zzz);
 const textfield = document.querySelector('textarea');
 textfield.addEventListener('keydown', (e) => e.preventDefault());
 
 document.addEventListener('keydown', (e) => {
-  if (e.code === 'KeyZ') {
-    zzz.classList.add('keyboard__key_active');
+  const currentBtn = document.getElementById(e.code);
+  if (currentBtn) {
+    currentBtn.classList.add('keyboard__key_active');
     textfield.setRangeText(e.key, textfield.selectionStart, textfield.selectionStart, 'end');
   }
 });
 document.addEventListener('keyup', (e) => {
-  if (e.code === 'KeyZ') {
-    zzz.classList.remove('keyboard__key_active');
+  const currentBtn = document.getElementById(e.code);
+  if (currentBtn) {
+    currentBtn.classList.remove('keyboard__key_active');
   }
 });
 
-zzz.addEventListener('mousedown', () => {
-  zzz.classList.add('keyboard__key_active');
-  textfield.setRangeText(zzz.innerText, textfield.selectionStart, textfield.selectionStart);
-  textfield.selectionStart += zzz.innerText.length;
+zzz.addEventListener('mousedown', (e) => {
+  const currentBtn = e.target;
+  currentBtn.classList.add('keyboard__key_active');
+  textfield.setRangeText(currentBtn.innerText, textfield.selectionStart, textfield.selectionStart);
+  textfield.selectionStart += currentBtn.innerText.length;
   textfield.focus();
 });
-zzz.addEventListener('mouseup', () => {
-  zzz.classList.remove('keyboard__key_active');
+zzz.addEventListener('mouseup', (e) => {
+  const currentBtn = e.target;
+  currentBtn.classList.remove('keyboard__key_active');
 });

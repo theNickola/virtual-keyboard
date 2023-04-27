@@ -40,10 +40,10 @@
   font-weight: 600;
   cursor: pointer;
   user-select: none;
-  transition: border-radius .3s, background-color .3s;
+  transition: .3s;
 }
 .keyboard__key:hover {
-  opacity: 0.9;
+  opacity: 0.5;
 }
 .keyboard__key_size_s {
   width: 40px;
@@ -61,6 +61,7 @@
   width: 330px;
 }
 .keyboard__key_active {
-  opacity: 0.5;
   color: azure;
+  border-radius: 50%;
+  opacity: 0.5;
 }
