@@ -6,7 +6,9 @@
     "isSymbol": "true",
     "isDigit": "false",
     "isLetter": "false",
-    "isService": "false"
+    "isService": "false",
+    "size": "",
+    "row": ""
   },
   {
     "code": "Digit1",
