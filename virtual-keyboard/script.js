@@ -61,6 +61,44 @@ requestKeys.onload = () => {
   main.append(keyboard);
 
   document.body.append(main);
+  textfield.focus();
+};
+
+const JsonURLLang = `assets/${localStorage.lang}.json`;
+const requestLang = new XMLHttpRequest();
+let lang;
+let isCaps = false;
+
+const loadLanguage = () => {
+  requestLang.open('get', JsonURLLang, true);
+  requestLang.send();
+};
+
+requestLang.onload = () => {
+  lang = JSON.parse(requestLang.responseText);
+
+  let j = 0;
+  for (let i = 0; i < arrayKeys.length; i += 1) {
+    if (lang[j]) {
+      const {
+        code,
+        value,
+        valueShift,
+        isLetter,
+      } = lang[j];
+
+      if (code === arrayKeys[i].code) {
+        arrayKeys[i].value = value;
+        arrayKeys[i].valueShift = valueShift;
+        arrayKeys[i].isLetter = isLetter;
+        j += 1;
+      }
+    }
+  }
+
+  for (let i = 0; i < arrayKeys.length; i += 1) {
+    arrayKeys[i].domElement.innerText = arrayKeys[i].value;
+  }
 
   const zzz = document.createElement('span');
   zzz.classList.add('keyboard__key', 'keyboard__key_size_s');
@@ -68,6 +106,7 @@ requestKeys.onload = () => {
   zzz.innerText = 'z';
   document.body.append(zzz);
 
+  const textfield = document.querySelector('textarea');
   textfield.addEventListener('keydown', (e) => e.preventDefault());
 
   document.addEventListener('keydown', (e) => {
@@ -76,7 +115,7 @@ requestKeys.onload = () => {
       currentBtn.classList.add('keyboard__key_active');
       const isServiceCurrentBtn = keys.filter((el) => el.code === e.code)[0].isService;
       if (!isServiceCurrentBtn) {
-        textfield.setRangeText(e.key, textfield.selectionStart, textfield.selectionStart, 'end');
+        textfield.setRangeText(currentBtn.innerText, textfield.selectionStart, textfield.selectionStart, 'end');
       } else {
         switch (currentBtn.id) {
           case 'Tab':
@@ -113,7 +152,23 @@ requestKeys.onload = () => {
             textfield.setRangeText('LS', textfield.selectionStart, textfield.selectionStart, 'end');
             break;
           case 'CapsLock':
-            textfield.setRangeText('CL', textfield.selectionStart, textfield.selectionStart, 'end');
+            if (isCaps) {
+              for (let i = 0; i < arrayKeys.length; i += 1) {
+                if (arrayKeys[i].isLetter) {
+                  arrayKeys[i].domElement.innerText = arrayKeys[i].value;
+                }
+              }
+              currentBtn.classList.remove('keyboard__key_active');
+            } else {
+              for (let i = 0; i < arrayKeys.length; i += 1) {
+                if (arrayKeys[i].isLetter) {
+                  const shiftValue = arrayKeys[i].domElement.innerText.toUpperCase();
+                  arrayKeys[i].domElement.innerText = shiftValue;
+                }
+              }
+            }
+            isCaps = !isCaps;
+
             break;
           case 'AltLeft': e.preventDefault(); break;
           case 'AltRight': e.preventDefault(); break;
@@ -124,7 +179,7 @@ requestKeys.onload = () => {
   });
   document.addEventListener('keyup', (e) => {
     const currentBtn = document.getElementById(e.code);
-    if (currentBtn) {
+    if (currentBtn && currentBtn.id !== 'CapsLock') {
       currentBtn.classList.remove('keyboard__key_active');
     }
   });
@@ -144,42 +199,6 @@ requestKeys.onload = () => {
     const currentBtn = e.target;
     currentBtn.classList.remove('keyboard__key_active');
   });
-};
-
-const JsonURLLang = `assets/${localStorage.lang}.json`;
-const requestLang = new XMLHttpRequest();
-let lang;
-
-const loadLanguage = () => {
-  requestLang.open('get', JsonURLLang, true);
-  requestLang.send();
-};
-
-requestLang.onload = () => {
-  lang = JSON.parse(requestLang.responseText);
-
-  let j = 0;
-  for (let i = 0; i < arrayKeys.length; i += 1) {
-    if (lang[j]) {
-      const {
-        code,
-        value,
-        valueShift,
-        isLetter,
-      } = lang[j];
-
-      if (code === arrayKeys[i].code) {
-        arrayKeys[i].value = value;
-        arrayKeys[i].valueShift = valueShift;
-        arrayKeys[i].isLetter = isLetter;
-        j += 1;
-      }
-    }
-  }
-
-  for (let i = 0; i < arrayKeys.length; i += 1) {
-    arrayKeys[i].domElement.innerText = arrayKeys[i].value;
-  }
 };
 
 loadLanguage();
