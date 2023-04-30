@@ -1,14 +1,16 @@
 class Key {
-  constructor(code, value, valueShift, isLetter) {
+  constructor(domElement, code, isService, value, valueShift, isLetter) {
+    this.domElement = domElement;
     this.code = code;
     this.value = value;
     this.valueShift = valueShift;
     this.isLetter = isLetter;
+    this.isService = isService;
   }
 }
 const arrayKeys = [];
 
-if (localStorage.lang) localStorage.lang = 'EN-en';
+if (!localStorage.lang) localStorage.lang = 'EN-en';
 
 const JsonURLKeys = 'assets/keys.json';
 const requestKeys = new XMLHttpRequest();
@@ -50,7 +52,7 @@ requestKeys.onload = () => {
         case 'xxl': key.classList.add('keyboard__key_size_xxl'); break;
         default: break;
       }
-      // key.innerHTML = oneRowKeys[j].code;
+      arrayKeys.push(new Key(key, code, isService));
       keyboardRow.append(key);
     }
     keyboard.append(keyboardRow);
@@ -142,4 +144,17 @@ requestKeys.onload = () => {
     const currentBtn = e.target;
     currentBtn.classList.remove('keyboard__key_active');
   });
+};
+
+const JsonURLLang = `assets/${localStorage.lang}.json`;
+const requestLang = new XMLHttpRequest();
+let lang;
+
+(() => {
+  requestLang.open('get', JsonURLLang, true);
+  requestLang.send();
+})();
+
+requestLang.onload = () => {
+  lang = JSON.parse(requestLang.responseText);
 };
