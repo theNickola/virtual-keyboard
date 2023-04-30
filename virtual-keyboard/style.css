@@ -23,6 +23,7 @@
 }
 
 .keyboard__row {
+  margin: 0;
   display: flex;
   justify-content: space-between;
 }
@@ -41,7 +42,7 @@
   font-weight: 600;
   cursor: pointer;
   user-select: none;
-  transition: .3s;
+  transition: .15s;
 }
 .keyboard__key_type_service {
   background: #6c6cff;

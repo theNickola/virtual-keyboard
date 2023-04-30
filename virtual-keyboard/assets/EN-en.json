@@ -3,29 +3,256 @@
     "code": "Backquote",
     "value": "`",
     "valueShift": "~",
-    "isSymbol": "true",
-    "isDigit": "false",
-    "isLetter": "false",
-    "isService": "false",
-    "size": "",
-    "row": ""
+    "isLetter": false
   },
   {
     "code": "Digit1",
-    "value": "`",
-    "valueShift": "~",
-    "isSymbol": "true",
-    "isDigit": "false",
-    "isLetter": "false",
-    "isService": "false"
+    "value": "1",
+    "valueShift": "!",
+    "isLetter": false
   },
   {
-    "code": "Backquote",
-    "value": "`",
-    "valueShift": "~",
-    "isSymbol": "true",
-    "isDigit": "false",
-    "isLetter": "false",
-    "isService": "false"
+    "code": "Digit2",
+    "value": "2",
+    "valueShift": "@",
+    "isLetter": false
+  },
+  {
+    "code": "Digit3",
+    "value": "3",
+    "valueShift": "#",
+    "isLetter": false
+  },
+  {
+    "code": "Digit4",
+    "value": "4",
+    "valueShift": "$",
+    "isLetter": false
+  },
+  {
+    "code": "Digit5",
+    "value": "5",
+    "valueShift": "%",
+    "isLetter": false
+  },
+  {
+    "code": "Digit6",
+    "value": "6",
+    "valueShift": "^",
+    "isLetter": false
+  },
+  {
+    "code": "Digit7",
+    "value": "7",
+    "valueShift": "&",
+    "isLetter": false
+  },
+  {
+    "code": "Digit8",
+    "value": "8",
+    "valueShift": "*",
+    "isLetter": false
+  },
+  {
+    "code": "Digit9",
+    "value": "9",
+    "valueShift": "(",
+    "isLetter": false
+  },
+  {
+    "code": "Digit0",
+    "value": "0",
+    "valueShift": ")",
+    "isLetter": false
+  },
+  {
+    "code": "Minus",
+    "value": "-",
+    "valueShift": "_",
+    "isLetter": false
+  },
+  {
+    "code": "Equal",
+    "value": "=",
+    "valueShift": "+",
+    "isLetter": false
+  },
+  {
+    "code": "KeyQ",
+    "value": "q",
+    "isLetter": true
+  },
+  {
+    "code": "KeyW",
+    "value": "w",
+    "isLetter": true
+  },
+  {
+    "code": "KeyE",
+    "value": "e",
+    "isLetter": true
+  },
+  {
+    "code": "KeyR",
+    "value": "r",
+    "isLetter": true
+  },
+  {
+    "code": "KeyT",
+    "value": "t",
+    "isLetter": true
+  },
+  {
+    "code": "KeyY",
+    "value": "y",
+    "isLetter": true
+  },
+  {
+    "code": "KeyU",
+    "value": "u",
+    "isLetter": true
+  },
+  {
+    "code": "KeyI",
+    "value": "i",
+    "isLetter": true
+  },
+  {
+    "code": "KeyO",
+    "value": "o",
+    "isLetter": true
+  },
+  {
+    "code": "KeyP",
+    "value": "p",
+    "isLetter": true
+  },
+  {
+    "code": "BracketLeft",
+    "value": "[",
+    "valueShift": "{",
+    "isLetter": false
+  },
+  {
+    "code": "BracketRight",
+    "value": "]",
+    "valueShift": "}",
+    "isLetter": false
+  },
+  {
+    "code": "Backslash",
+    "value": "\\",
+    "valueShift": "\\",
+    "isLetter": false
+  },
+  {
+    "code": "KeyA",
+    "value": "a",
+    "isLetter": true
+  },
+  {
+    "code": "KeyS",
+    "value": "s",
+    "isLetter": true
+  },
+  {
+    "code": "KeyD",
+    "value": "d",
+    "isLetter": true
+  },
+  {
+    "code": "KeyF",
+    "value": "f",
+    "isLetter": true
+  },
+  {
+    "code": "KeyG",
+    "value": "g",
+    "isLetter": true
+  },
+  {
+    "code": "KeyH",
+    "value": "h",
+    "isLetter": true
+  },
+  {
+    "code": "KeyJ",
+    "value": "j",
+    "isLetter": true
+  },
+  {
+    "code": "KeyK",
+    "value": "k",
+    "isLetter": true
+  },
+  {
+    "code": "KeyL",
+    "value": "l",
+    "isLetter": true
+  },
+  {
+    "code": "Semicolon",
+    "value": ";",
+    "valueShift": ":",
+    "isLetter": false
+  },
+  {
+    "code": "Quote",
+    "value": "'",
+    "valueShift": "\"",
+    "isLetter": false
+  },
+  {
+    "code": "KeyZ",
+    "value": "z",
+    "isLetter": true
+  },
+  {
+    "code": "KeyX",
+    "value": "x",
+    "isLetter": true
+  },
+  {
+    "code": "KeyC",
+    "value": "c",
+    "isLetter": true
+  },
+  {
+    "code": "KeyV",
+    "value": "v",
+    "isLetter": true
+  },
+  {
+    "code": "KeyB",
+    "value": "b",
+    "isLetter": true
+  },
+  {
+    "code": "KeyN",
+    "value": "n",
+    "isLetter": true
+  },
+  {
+    "code": "KeyM",
+    "value": "m",
+    "isLetter": true
+  },
+  {
+    "code": "Comma",
+    "value": ",",
+    "valueShift": "<",
+    "isLetter": false
+  },
+  {
+    "code": "Period",
+    "value": ".",
+    "valueShift": ">",
+    "isLetter": false
+  },
+  {
+    "code": "Slash",
+    "value": "/",
+    "valueShift": "?",
+    "isLetter": false
   }
 ]

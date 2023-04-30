@@ -1,9 +1,9 @@
 class Key {
-  constructor(code, value, valueShift, type) {
+  constructor(code, value, valueShift, isLetter) {
     this.code = code;
     this.value = value;
     this.valueShift = valueShift;
-    this.type = type;
+    this.isLetter = isLetter;
   }
 }
 let arrayKeys = [];
@@ -33,11 +33,11 @@ requestKeys.onload = () => {
   keyboard.classList.add('keyboard');
 
   for (let i = 1; i < 6; i += 1) {
-    const keyboardRow = document.createElement('div');
+    const keyboardRow = document.createElement('p');
     keyboardRow.classList.add('keyboard__row');
     const oneRowKeys = keys.filter((e) => e.row === i);
     for (let j = 0; j < oneRowKeys.length; j += 1) {
-      const key = document.createElement('div');
+      const key = document.createElement('span');
       key.classList.add('keyboard__key');
       const { code, size, isService } = oneRowKeys[j];
       key.id = code;
@@ -75,6 +75,46 @@ requestKeys.onload = () => {
       const isServiceCurrentBtn = keys.filter((el) => el.code === e.code)[0].isService;
       if (!isServiceCurrentBtn) {
         textfield.setRangeText(e.key, textfield.selectionStart, textfield.selectionStart, 'end');
+      } else {
+        switch (currentBtn.id) {
+          case 'Tab':
+            textfield.setRangeText('\t', textfield.selectionStart, textfield.selectionStart, 'end');
+            break;
+          case 'Backspace':
+            if (textfield.selectionStart > 0) textfield.setRangeText('', textfield.selectionStart - 1, textfield.selectionStart, 'end');
+            break;
+          case 'Delete':
+            textfield.setRangeText('', textfield.selectionStart, textfield.selectionStart + 1, 'end');
+            break;
+          case 'Space':
+            textfield.setRangeText(' ', textfield.selectionStart, textfield.selectionStart, 'end');
+            break;
+          case 'ArrowRight':
+            textfield.setRangeText('►', textfield.selectionStart, textfield.selectionStart, 'end');
+            break;
+          case 'ArrowLeft':
+            textfield.setRangeText('◄', textfield.selectionStart, textfield.selectionStart, 'end');
+            break;
+          case 'ArrowUp':
+            textfield.setRangeText('▲', textfield.selectionStart, textfield.selectionStart, 'end');
+            break;
+          case 'ArrowDown':
+            textfield.setRangeText('▼', textfield.selectionStart, textfield.selectionStart, 'end');
+            break;
+          case 'Enter':
+            textfield.setRangeText('\n', textfield.selectionStart, textfield.selectionStart, 'end');
+            break;
+          case 'ShiftRight':
+            textfield.setRangeText('RS', textfield.selectionStart, textfield.selectionStart, 'end');
+            break;
+          case 'ShiftLeft':
+            textfield.setRangeText('LS', textfield.selectionStart, textfield.selectionStart, 'end');
+            break;
+          case 'CapsLock':
+            textfield.setRangeText('CL', textfield.selectionStart, textfield.selectionStart, 'end');
+            break;
+          default: break;
+        }
       }
     }
   });
