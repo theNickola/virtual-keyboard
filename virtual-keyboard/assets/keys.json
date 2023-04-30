@@ -1,386 +1,386 @@
 [
   {
     "code": "Backquote",
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "1"
+    "row": 1
   },
   {
     "code": "Digit1",
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "1"
+    "row": 1
   },
   {
     "code": "Digit2",
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "1"
+    "row": 1
   },
   {
     "code": "Digit3",
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "1"
+    "row": 1
   },
   {
     "code": "Digit4",
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "1"
+    "row": 1
   },
   {
     "code": "Digit5",
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "1"
+    "row": 1
   },
   {
     "code": "Digit6",
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "1"
+    "row": 1
   },
   {
     "code": "Digit7",
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "1"
+    "row": 1
   },
   {
     "code": "Digit8",
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "1"
+    "row": 1
   },
   {
     "code": "Digit9",
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "1"
+    "row": 1
   },
   {
     "code": "Digit0",
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "1"
+    "row": 1
   },
   {
     "code": "Minus",
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "1"
+    "row": 1
   },
   {
     "code": "Equal",
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "1"
+    "row": 1
   },
   {
     "code": "Backspace",
-    "isService": "false",
-    "size": "s",
-    "row": "1"
+    "isService": true,
+    "size": "xl",
+    "row": 1
   },
   {
     "code": "Tab",
-    "isService": "false",
-    "size": "s",
-    "row": "2"
+    "isService": true,
+    "size": "m",
+    "row": 2
   },
   {
     "code": "KeyQ",
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "2"
+    "row": 2
   },
   {
     "code": "KeyW",
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "2"
+    "row": 2
   },
   {
     "code": "KeyE",
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "2"
+    "row": 2
   },
   {
     "code": "KeyR",
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "2"
+    "row": 2
   },
   {
     "code": "KeyT",
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "2"
+    "row": 2
   },
   {
     "code": "KeyY",
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "2"
+    "row": 2
   },
   {
     "code": "KeyU",
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "2"
+    "row": 2
   },
   {
     "code": "KeyI",
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "2"
+    "row": 2
   },
   {
     "code": "KeyO",
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "2"
+    "row": 2
   },
   {
     "code": "KeyP",
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "2"
+    "row": 2
   },
   {
     "code": "BracketLeft",
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "2"
+    "row": 2
   },
   {
     "code": "BracketRight",
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "2"
+    "row": 2
   },
   {
     "code": "Backslash",
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "2"
+    "row": 2
   },
   {
     "code": "Delete",
-    "isService": "false",
-    "size": "s",
-    "row": "2"
+    "isService": true,
+    "size": "m",
+    "row": 2
   },
   {
     "code": "CapsLock",
-    "isService": "false",
-    "size": "s",
-    "row": "3"
+    "isService": true,
+    "size": "l",
+    "row": 3
   },
   {
     "code": "KeyA",
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "3"
+    "row": 3
   },
   {
     "code": "KeyS",
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "3"
+    "row": 3
   },
   {
     "code": "KeyD",
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "3"
+    "row": 3
   },
   {
     "code": "KeyF",
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "3"
+    "row": 3
   },
   {
     "code": "KeyG",
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "3"
+    "row": 3
   },
   {
     "code": "KeyH",
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "3"
+    "row": 3
   },
   {
     "code": "KeyJ",
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "3"
+    "row": 3
   },
   {
     "code": "KeyK",
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "3"
+    "row": 3
   },
   {
     "code": "KeyL",
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "3"
+    "row": 3
   },
   {
     "code": "Semicolon",
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "3"
+    "row": 3
   },
   {
     "code": "Quote",
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "3"
+    "row": 3
   },
   {
     "code": "Enter",
-    "isService": "false",
-    "size": "s",
-    "row": "3"
+    "isService": true,
+    "size": "l",
+    "row": 3
   },
   {
     "code": ["ShiftLeft", "shiftKey"],
-    "isService": "false",
-    "size": "s",
-    "row": "4"
+    "isService": true,
+    "size": "xl",
+    "row": 4
   },
   {
     "code": ["KeyZ"],
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "4"
+    "row": 4
   },
   {
     "code": ["KeyX"],
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "4"
+    "row": 4
   },
   {
     "code": ["KeyC"],
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "4"
+    "row": 4
   },
   {
     "code": ["KeyV"],
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "4"
+    "row": 4
   },
   {
     "code": ["KeyB"],
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "4"
+    "row": 4
   },
   {
     "code": ["KeyN"],
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "4"
+    "row": 4
   },
   {
     "code": ["KeyM"],
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "4"
+    "row": 4
   },
   {
     "code": ["Comma"],
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "4"
+    "row": 4
   },
   {
     "code": ["Period"],
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "4"
+    "row": 4
   },
   {
     "code": ["Slash"],
-    "isService": "false",
+    "isService": false,
     "size": "s",
-    "row": "4"
+    "row": 4
   },
   {
     "code": ["ArrowUp"],
-    "isService": "false",
+    "isService": true,
     "size": "s",
-    "row": "4"
+    "row": 4
   },
   {
     "code": ["ShiftRight", "shiftKey"],
-    "isService": "false",
-    "size": "s",
-    "row": "4"
+    "isService": true,
+    "size": "l",
+    "row": 4
   },
   {
     "code": ["ControlLeft", "ctrlKey"],
-    "isService": "false",
-    "size": "s",
-    "row": "5"
+    "isService": true,
+    "size": "m",
+    "row": 5
   },
   {
     "code": ["MetaLeft", "metaKey"],
-    "isService": "false",
-    "size": "s",
-    "row": "5"
+    "isService": true,
+    "size": "m",
+    "row": 5
   },
   {
     "code": ["AltLeft", "altKey"],
-    "isService": "false",
-    "size": "s",
-    "row": "5"
+    "isService": true,
+    "size": "m",
+    "row": 5
   },
   {
     "code": ["Space"],
-    "isService": "false",
-    "size": "s",
-    "row": "5"
+    "isService": true,
+    "size": "xxl",
+    "row": 5
   },
   {
     "code": ["AltRight", "altKey"],
-    "isService": "false",
-    "size": "s",
-    "row": "5"
+    "isService": true,
+    "size": "m",
+    "row": 5
   },
   {
     "code": ["ArrowLeft"],
-    "isService": "false",
+    "isService": true,
     "size": "s",
-    "row": "5"
+    "row": 5
   },
   {
     "code": ["ArrowDown"],
-    "isService": "false",
+    "isService": true,
     "size": "s",
-    "row": "5"
+    "row": 5
   },
   {
     "code": ["ArrowRight"],
-    "isService": "false",
+    "isService": true,
     "size": "s",
-    "row": "5"
+    "row": 5
   },
   {
     "code": ["ControlRight", "ctrlKey"],
-    "isService": "false",
+    "isService": true,
     "size": "s",
-    "row": "5"
+    "row": 5
   }
 ]

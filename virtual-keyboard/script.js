@@ -32,10 +32,19 @@ requestKeys.onload = () => {
   for (let i = 1; i < 6; i += 1) {
     const keyboardRow = document.createElement('div');
     keyboardRow.classList.add('keyboard__row');
-    const oneRowKeys = keys.filter((e) => e.row === i.toString());
+    const oneRowKeys = keys.filter((e) => e.row === i);
     for (let j = 0; j < oneRowKeys.length; j += 1) {
       const key = document.createElement('div');
-      key.classList.add('keyboard__key', 'keyboard__key_size_s');
+      key.classList.add('keyboard__key');
+      switch (oneRowKeys[j].size) {
+        case 's': key.classList.add('keyboard__key_size_s'); break;
+        case 'm': key.classList.add('keyboard__key_size_m'); break;
+        case 'l': key.classList.add('keyboard__key_size_l'); break;
+        case 'xl': key.classList.add('keyboard__key_size_xl'); break;
+        case 'xxl': key.classList.add('keyboard__key_size_xxl'); break;
+        default: break;
+      }
+      //TODO: implement to adding current language
       key.innerHTML = oneRowKeys[j].code;
       keyboardRow.append(key);
     }

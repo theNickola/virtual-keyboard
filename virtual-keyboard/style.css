@@ -14,7 +14,7 @@
 
 .keyboard {
   margin-top: 7px;
-  width: 80vw;
+  width: 67vw;
   display: flex;
   flex-direction: column;
   border: 2px solid #8b8b8b;
@@ -30,7 +30,7 @@
 .keyboard__key {
   margin: 5px;
   height: 40px;
-  border: 3px solid #5863ff;
+  border: 2px solid #5863ff;
   border-radius: 3px;
   background: #8787ff;
   display: flex;
@@ -57,13 +57,13 @@
   width: 50px;
 }
 .keyboard__key_size_l {
-  width: 86px;
+  width: 90px;
 }
 .keyboard__key_size_xl {
   width: 100px;
 }
 .keyboard__key_size_xxl {
-  width: 330px;
+  width: 370px;
 }
 .keyboard__key_active {
   color: #f0ffff;
