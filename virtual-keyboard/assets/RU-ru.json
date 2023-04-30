@@ -1,0 +1,251 @@
+[
+  {
+    "code": "Backquote",
+    "value": "ё",
+    "isLetter": true
+  },
+  {
+    "code": "Digit1",
+    "value": "1",
+    "valueShift": "!",
+    "isLetter": false
+  },
+  {
+    "code": "Digit2",
+    "value": "2",
+    "valueShift": "\"",
+    "isLetter": false
+  },
+  {
+    "code": "Digit3",
+    "value": "3",
+    "valueShift": "№",
+    "isLetter": false
+  },
+  {
+    "code": "Digit4",
+    "value": "4",
+    "valueShift": ";",
+    "isLetter": false
+  },
+  {
+    "code": "Digit5",
+    "value": "5",
+    "valueShift": "%",
+    "isLetter": false
+  },
+  {
+    "code": "Digit6",
+    "value": "6",
+    "valueShift": ":",
+    "isLetter": false
+  },
+  {
+    "code": "Digit7",
+    "value": "7",
+    "valueShift": "?",
+    "isLetter": false
+  },
+  {
+    "code": "Digit8",
+    "value": "8",
+    "valueShift": "*",
+    "isLetter": false
+  },
+  {
+    "code": "Digit9",
+    "value": "9",
+    "valueShift": "(",
+    "isLetter": false
+  },
+  {
+    "code": "Digit0",
+    "value": "0",
+    "valueShift": ")",
+    "isLetter": false
+  },
+  {
+    "code": "Minus",
+    "value": "-",
+    "valueShift": "_",
+    "isLetter": false
+  },
+  {
+    "code": "Equal",
+    "value": "=",
+    "valueShift": "+",
+    "isLetter": false
+  },
+  {
+    "code": "KeyQ",
+    "value": "й",
+    "isLetter": true
+  },
+  {
+    "code": "KeyW",
+    "value": "ц",
+    "isLetter": true
+  },
+  {
+    "code": "KeyE",
+    "value": "у",
+    "isLetter": true
+  },
+  {
+    "code": "KeyR",
+    "value": "к",
+    "isLetter": true
+  },
+  {
+    "code": "KeyT",
+    "value": "е",
+    "isLetter": true
+  },
+  {
+    "code": "KeyY",
+    "value": "н",
+    "isLetter": true
+  },
+  {
+    "code": "KeyU",
+    "value": "г",
+    "isLetter": true
+  },
+  {
+    "code": "KeyI",
+    "value": "ш",
+    "isLetter": true
+  },
+  {
+    "code": "KeyO",
+    "value": "щ",
+    "isLetter": true
+  },
+  {
+    "code": "KeyP",
+    "value": "з",
+    "isLetter": true
+  },
+  {
+    "code": "BracketLeft",
+    "value": "х",
+    "isLetter": true
+  },
+  {
+    "code": "BracketRight",
+    "value": "ъ",
+    "isLetter": true
+  },
+  {
+    "code": "Backslash",
+    "value": "\\",
+    "valueShift": "\\",
+    "isLetter": false
+  },
+  {
+    "code": "KeyA",
+    "value": "ф",
+    "isLetter": true
+  },
+  {
+    "code": "KeyS",
+    "value": "ы",
+    "isLetter": true
+  },
+  {
+    "code": "KeyD",
+    "value": "в",
+    "isLetter": true
+  },
+  {
+    "code": "KeyF",
+    "value": "а",
+    "isLetter": true
+  },
+  {
+    "code": "KeyG",
+    "value": "п",
+    "isLetter": true
+  },
+  {
+    "code": "KeyH",
+    "value": "р",
+    "isLetter": true
+  },
+  {
+    "code": "KeyJ",
+    "value": "о",
+    "isLetter": true
+  },
+  {
+    "code": "KeyK",
+    "value": "л",
+    "isLetter": true
+  },
+  {
+    "code": "KeyL",
+    "value": "д",
+    "isLetter": true
+  },
+  {
+    "code": "Semicolon",
+    "value": "ж",
+    "isLetter": true
+  },
+  {
+    "code": "Quote",
+    "value": "э",
+    "isLetter": true
+  },
+  {
+    "code": "KeyZ",
+    "value": "я",
+    "isLetter": true
+  },
+  {
+    "code": "KeyX",
+    "value": "ч",
+    "isLetter": true
+  },
+  {
+    "code": "KeyC",
+    "value": "с",
+    "isLetter": true
+  },
+  {
+    "code": "KeyV",
+    "value": "м",
+    "isLetter": true
+  },
+  {
+    "code": "KeyB",
+    "value": "и",
+    "isLetter": true
+  },
+  {
+    "code": "KeyN",
+    "value": "т",
+    "isLetter": true
+  },
+  {
+    "code": "KeyM",
+    "value": "ь",
+    "isLetter": true
+  },
+  {
+    "code": "Comma",
+    "value": "б",
+    "isLetter": true
+  },
+  {
+    "code": "Period",
+    "value": "ю",
+    "isLetter": true
+  },
+  {
+    "code": "Slash",
+    "value": ".",
+    "valueShift": ",",
+    "isLetter": false
+  }
+]
