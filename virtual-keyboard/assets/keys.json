@@ -252,133 +252,133 @@
     "row": 3
   },
   {
-    "code": ["ShiftLeft", "shiftKey"],
+    "code": "ShiftLeft",
     "isService": true,
     "size": "xl",
     "row": 4
   },
   {
-    "code": ["KeyZ"],
+    "code": "KeyZ",
     "isService": false,
     "size": "s",
     "row": 4
   },
   {
-    "code": ["KeyX"],
+    "code": "KeyX",
     "isService": false,
     "size": "s",
     "row": 4
   },
   {
-    "code": ["KeyC"],
+    "code": "KeyC",
     "isService": false,
     "size": "s",
     "row": 4
   },
   {
-    "code": ["KeyV"],
+    "code": "KeyV",
     "isService": false,
     "size": "s",
     "row": 4
   },
   {
-    "code": ["KeyB"],
+    "code": "KeyB",
     "isService": false,
     "size": "s",
     "row": 4
   },
   {
-    "code": ["KeyN"],
+    "code": "KeyN",
     "isService": false,
     "size": "s",
     "row": 4
   },
   {
-    "code": ["KeyM"],
+    "code": "KeyM",
     "isService": false,
     "size": "s",
     "row": 4
   },
   {
-    "code": ["Comma"],
+    "code": "Comma",
     "isService": false,
     "size": "s",
     "row": 4
   },
   {
-    "code": ["Period"],
+    "code": "Period",
     "isService": false,
     "size": "s",
     "row": 4
   },
   {
-    "code": ["Slash"],
+    "code": "Slash",
     "isService": false,
     "size": "s",
     "row": 4
   },
   {
-    "code": ["ArrowUp"],
+    "code": "ArrowUp",
     "isService": true,
     "size": "s",
     "row": 4
   },
   {
-    "code": ["ShiftRight", "shiftKey"],
+    "code": "ShiftRight",
     "isService": true,
     "size": "l",
     "row": 4
   },
   {
-    "code": ["ControlLeft", "ctrlKey"],
+    "code": "ControlLeft",
     "isService": true,
     "size": "m",
     "row": 5
   },
   {
-    "code": ["MetaLeft", "metaKey"],
+    "code": "MetaLeft",
     "isService": true,
     "size": "m",
     "row": 5
   },
   {
-    "code": ["AltLeft", "altKey"],
+    "code": "AltLeft",
     "isService": true,
     "size": "m",
     "row": 5
   },
   {
-    "code": ["Space"],
+    "code": "Space",
     "isService": true,
     "size": "xxl",
     "row": 5
   },
   {
-    "code": ["AltRight", "altKey"],
+    "code": "AltRight",
     "isService": true,
     "size": "m",
     "row": 5
   },
   {
-    "code": ["ArrowLeft"],
+    "code": "ArrowLeft",
     "isService": true,
     "size": "s",
     "row": 5
   },
   {
-    "code": ["ArrowDown"],
+    "code": "ArrowDown",
     "isService": true,
     "size": "s",
     "row": 5
   },
   {
-    "code": ["ArrowRight"],
+    "code": "ArrowRight",
     "isService": true,
     "size": "s",
     "row": 5
   },
   {
-    "code": ["ControlRight", "ctrlKey"],
+    "code": "ControlRight",
     "isService": true,
     "size": "s",
     "row": 5
