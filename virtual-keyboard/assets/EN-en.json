@@ -78,6 +78,14 @@
     "isLetter": false
   },
   {
+    "code": "Backspace",
+    "value": "Backspace"
+  },
+  {
+    "code": "Tab",
+    "value": "Tab"
+  },
+  {
     "code": "KeyQ",
     "value": "q",
     "isLetter": true
@@ -146,6 +154,14 @@
     "isLetter": false
   },
   {
+    "code": "Delete",
+    "value": "Delete"
+  },
+  {
+    "code": "CapsLock",
+    "value": "Caps Lock"
+  },
+  {
     "code": "KeyA",
     "value": "a",
     "isLetter": true
@@ -203,6 +219,14 @@
     "isLetter": false
   },
   {
+    "code": "Enter",
+    "value": "Enter"
+  },
+  {
+    "code": "ShiftLeft",
+    "value": "Shift"
+  },
+  {
     "code": "KeyZ",
     "value": "z",
     "isLetter": true
@@ -254,5 +278,49 @@
     "value": "/",
     "valueShift": "?",
     "isLetter": false
+  },
+  {
+    "code": "ArrowUp",
+    "value": "▲"
+  },
+  {
+    "code": "ShiftRight",
+    "value": "Shift"
+  },
+  {
+    "code": "ControlLeft",
+    "value": "Ctrl"
+  },
+  {
+    "code": "MetaLeft",
+    "value": "Win"
+  },
+  {
+    "code": "AltLeft",
+    "value": "Alt"
+  },
+  {
+    "code": "Space",
+    "value": "Space"
+  },
+  {
+    "code": "AltRight",
+    "value": "Alt"
+  },
+  {
+    "code": "ArrowLeft",
+    "value": "◄"
+  },
+  {
+    "code": "ArrowDown",
+    "value": "▼"
+  },
+  {
+    "code": "ArrowRight",
+    "value": "►"
+  },
+  {
+    "code": "ControlRight",
+    "value": "Ctrl"
   }
 ]

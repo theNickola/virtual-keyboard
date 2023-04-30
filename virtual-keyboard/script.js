@@ -150,11 +150,33 @@ const JsonURLLang = `assets/${localStorage.lang}.json`;
 const requestLang = new XMLHttpRequest();
 let lang;
 
-(() => {
+const loadLanguage = () => {
   requestLang.open('get', JsonURLLang, true);
   requestLang.send();
-})();
+};
 
 requestLang.onload = () => {
   lang = JSON.parse(requestLang.responseText);
+
+  let j = 0;
+  for (let i = 0; i < arrayKeys.length; i += 1) {
+    if (lang[j]) {
+      const {
+        code,
+        value,
+        valueShift,
+        isLetter,
+      } = lang[j];
+
+      if (code === arrayKeys[i].code) {
+        arrayKeys[i].value = value;
+        arrayKeys[i].valueShift = valueShift;
+        arrayKeys[i].isLetter = isLetter;
+        j += 1;
+      }
+    }
+  }
 };
+
+loadLanguage();
+console.log(arrayKeys);
