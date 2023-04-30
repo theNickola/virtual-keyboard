@@ -176,7 +176,10 @@ requestLang.onload = () => {
       }
     }
   }
+
+  for (let i = 0; i < arrayKeys.length; i += 1) {
+    arrayKeys[i].domElement.innerText = arrayKeys[i].value;
+  }
 };
 
 loadLanguage();
-console.log(arrayKeys);

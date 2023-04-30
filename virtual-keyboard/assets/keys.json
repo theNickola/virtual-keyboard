@@ -254,7 +254,7 @@
   {
     "code": "ShiftLeft",
     "isService": true,
-    "size": "xl",
+    "size": "l",
     "row": 4
   },
   {

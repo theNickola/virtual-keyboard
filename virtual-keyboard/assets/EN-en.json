@@ -155,7 +155,7 @@
   },
   {
     "code": "Delete",
-    "value": "Delete"
+    "value": "Del"
   },
   {
     "code": "CapsLock",
@@ -301,7 +301,7 @@
   },
   {
     "code": "Space",
-    "value": "Space"
+    "value": " "
   },
   {
     "code": "AltRight",
