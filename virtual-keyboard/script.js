@@ -6,7 +6,7 @@ class Key {
     this.isLetter = isLetter;
   }
 }
-let arrayKeys = [];
+const arrayKeys = [];
 
 if (localStorage.lang) localStorage.lang = 'EN-en';
 
@@ -113,6 +113,8 @@ requestKeys.onload = () => {
           case 'CapsLock':
             textfield.setRangeText('CL', textfield.selectionStart, textfield.selectionStart, 'end');
             break;
+          case 'AltLeft': e.preventDefault(); break;
+          case 'AltRight': e.preventDefault(); break;
           default: break;
         }
       }
