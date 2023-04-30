@@ -36,6 +36,7 @@ requestKeys.onload = () => {
     for (let j = 0; j < oneRowKeys.length; j += 1) {
       const key = document.createElement('div');
       key.classList.add('keyboard__key');
+      if (oneRowKeys[j].isService) key.classList.add('keyboard__key_type_service');
       switch (oneRowKeys[j].size) {
         case 's': key.classList.add('keyboard__key_size_s'); break;
         case 'm': key.classList.add('keyboard__key_size_m'); break;
