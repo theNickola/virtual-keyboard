@@ -27,6 +27,11 @@ requestKeys.onload = () => {
   const main = document.createElement('main');
   main.classList.add('main');
 
+  const title = document.createElement('h1');
+  title.innerText = 'RSS Виртуальная клавиатура';
+  title.classList.add('title');
+  main.append(title);
+
   const textfield = document.createElement('textarea');
   textfield.classList.add('textfield');
   main.append(textfield);
@@ -59,6 +64,16 @@ requestKeys.onload = () => {
   }
 
   main.append(keyboard);
+
+  const description = document.createElement('p');
+  description.innerText = 'Клавиатура создана в операционной системе Windows';
+  description.classList.add('description');
+  main.append(description);
+
+  const descriptionLang = document.createElement('p');
+  descriptionLang.innerText = 'Для переключения языка комбинация: левыe ctrl + alt';
+  descriptionLang.classList.add('description-lang');
+  main.append(descriptionLang);
 
   document.body.append(main);
   textfield.focus();
@@ -166,7 +181,6 @@ requestLang.onload = () => {
     if (countKeysForSwitchLang === 2 && pressed.size === 2) {
       localStorage.lang = localStorage.lang === 'EN-en' ? 'RU-ru' : 'EN-en';
       switchLanguage();
-      console.log(localStorage.lang);
     }
     if (currentBtn) {
       currentBtn.classList.add('keyboard__key_active');

@@ -44,14 +44,17 @@
   user-select: none;
   transition: .3s;
 }
+
 .keyboard__key_type_service {
   background: #6c6cff;
   border-color: #000000;
   font-size: 16px;
 }
+
 .keyboard__key:hover {
   opacity: 0.5;
 }
+
 .keyboard__key_size_s {
   width: 40px;
 }
@@ -67,9 +70,17 @@
 .keyboard__key_size_xxl {
   width: 370px;
 }
+
 .keyboard__key_active {
   color: #f0ffff;
   border-radius: 20px;
   opacity: 0.5;
   background: #2929ff;
+}
+
+.description,
+.description-lang,
+.title {
+  margin: 10px auto;
+  text-align: center;
 }
