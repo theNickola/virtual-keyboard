@@ -102,12 +102,6 @@ requestLang.onload = () => {
     arrayKeys[i].domElement.innerText = arrayKeys[i].value;
   }
 
-  const zzz = document.createElement('span');
-  zzz.classList.add('keyboard__key', 'keyboard__key_size_s');
-  zzz.id = 'KeyZ';
-  zzz.innerText = 'z';
-  document.body.append(zzz);
-
   const textfield = document.querySelector('textarea');
   textfield.addEventListener('keydown', (e) => e.preventDefault());
 
@@ -116,8 +110,12 @@ requestLang.onload = () => {
     const downShift = () => {
       for (let i = 0; i < arrayKeys.length; i += 1) {
         if (arrayKeys[i].isLetter) {
-          const shiftValue = arrayKeys[i].domElement.innerText.toUpperCase();
-          arrayKeys[i].domElement.innerText = shiftValue;
+          if (!isCaps) {
+            const shiftValue = arrayKeys[i].domElement.innerText.toUpperCase();
+            arrayKeys[i].domElement.innerText = shiftValue;
+          } else {
+            arrayKeys[i].domElement.innerText = arrayKeys[i].value;
+          }
         } else
         if (!arrayKeys[i].isService) {
           arrayKeys[i].domElement.innerText = arrayKeys[i].valueShift;
@@ -192,13 +190,15 @@ requestLang.onload = () => {
       }
     }
   });
+
   document.addEventListener('keyup', (e) => {
     const currentBtn = document.getElementById(e.code);
-    if (isShiftLeft) {
+    if (!currentBtn) return;
+    if (isShiftLeft && currentBtn.id === 'ShiftRight') {
       document.getElementById('ShiftLeft').classList.remove('keyboard__key_active');
       isShiftLeft = false;
     }
-    if (isShiftRight) {
+    if (isShiftRight && currentBtn.id === 'ShiftLeft') {
       document.getElementById('ShiftRight').classList.remove('keyboard__key_active');
       isShiftRight = false;
     }
@@ -207,8 +207,12 @@ requestLang.onload = () => {
     }
     if (currentBtn.id === 'ShiftLeft' || currentBtn.id === 'ShiftRight') {
       for (let i = 0; i < arrayKeys.length; i += 1) {
-        if (arrayKeys[i].isLetter && !isCaps) {
-          arrayKeys[i].domElement.innerText = arrayKeys[i].value;
+        if (arrayKeys[i].isLetter) {
+          if (!isCaps) {
+            arrayKeys[i].domElement.innerText = arrayKeys[i].value;
+          } else {
+            arrayKeys[i].domElement.innerText = arrayKeys[i].value.toUpperCase();
+          }
         } else
         if (!arrayKeys[i].isService && !arrayKeys[i].isLetter) {
           arrayKeys[i].domElement.innerText = arrayKeys[i].value;
@@ -217,6 +221,25 @@ requestLang.onload = () => {
     }
   });
 
+  document.querySelector('body').addEventListener('mousedown', (e) => {
+    const currentBtn = e.target;
+    if (currentBtn.classList.contains('keyboard__key')) {
+      currentBtn.classList.add('keyboard__key_active');
+      textfield.setRangeText(
+        currentBtn.innerText,
+        textfield.selectionStart,
+        textfield.selectionStart,
+      );
+      textfield.selectionStart += currentBtn.innerText.length;
+      textfield.focus();
+    }
+  });
+
+  const zzz = document.createElement('span');
+  zzz.classList.add('keyboard__key', 'keyboard__key_size_s');
+  zzz.id = 'KeyZ';
+  zzz.innerText = 'z';
+  document.body.append(zzz);
   zzz.addEventListener('mousedown', (e) => {
     const currentBtn = e.target;
     currentBtn.classList.add('keyboard__key_active');
