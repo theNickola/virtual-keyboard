@@ -1,0 +1,386 @@
+[
+  {
+    "code": "Backquote",
+    "isService": false,
+    "size": "s",
+    "row": 1
+  },
+  {
+    "code": "Digit1",
+    "isService": false,
+    "size": "s",
+    "row": 1
+  },
+  {
+    "code": "Digit2",
+    "isService": false,
+    "size": "s",
+    "row": 1
+  },
+  {
+    "code": "Digit3",
+    "isService": false,
+    "size": "s",
+    "row": 1
+  },
+  {
+    "code": "Digit4",
+    "isService": false,
+    "size": "s",
+    "row": 1
+  },
+  {
+    "code": "Digit5",
+    "isService": false,
+    "size": "s",
+    "row": 1
+  },
+  {
+    "code": "Digit6",
+    "isService": false,
+    "size": "s",
+    "row": 1
+  },
+  {
+    "code": "Digit7",
+    "isService": false,
+    "size": "s",
+    "row": 1
+  },
+  {
+    "code": "Digit8",
+    "isService": false,
+    "size": "s",
+    "row": 1
+  },
+  {
+    "code": "Digit9",
+    "isService": false,
+    "size": "s",
+    "row": 1
+  },
+  {
+    "code": "Digit0",
+    "isService": false,
+    "size": "s",
+    "row": 1
+  },
+  {
+    "code": "Minus",
+    "isService": false,
+    "size": "s",
+    "row": 1
+  },
+  {
+    "code": "Equal",
+    "isService": false,
+    "size": "s",
+    "row": 1
+  },
+  {
+    "code": "Backspace",
+    "isService": true,
+    "size": "xl",
+    "row": 1
+  },
+  {
+    "code": "Tab",
+    "isService": true,
+    "size": "m",
+    "row": 2
+  },
+  {
+    "code": "KeyQ",
+    "isService": false,
+    "size": "s",
+    "row": 2
+  },
+  {
+    "code": "KeyW",
+    "isService": false,
+    "size": "s",
+    "row": 2
+  },
+  {
+    "code": "KeyE",
+    "isService": false,
+    "size": "s",
+    "row": 2
+  },
+  {
+    "code": "KeyR",
+    "isService": false,
+    "size": "s",
+    "row": 2
+  },
+  {
+    "code": "KeyT",
+    "isService": false,
+    "size": "s",
+    "row": 2
+  },
+  {
+    "code": "KeyY",
+    "isService": false,
+    "size": "s",
+    "row": 2
+  },
+  {
+    "code": "KeyU",
+    "isService": false,
+    "size": "s",
+    "row": 2
+  },
+  {
+    "code": "KeyI",
+    "isService": false,
+    "size": "s",
+    "row": 2
+  },
+  {
+    "code": "KeyO",
+    "isService": false,
+    "size": "s",
+    "row": 2
+  },
+  {
+    "code": "KeyP",
+    "isService": false,
+    "size": "s",
+    "row": 2
+  },
+  {
+    "code": "BracketLeft",
+    "isService": false,
+    "size": "s",
+    "row": 2
+  },
+  {
+    "code": "BracketRight",
+    "isService": false,
+    "size": "s",
+    "row": 2
+  },
+  {
+    "code": "Backslash",
+    "isService": false,
+    "size": "s",
+    "row": 2
+  },
+  {
+    "code": "Delete",
+    "isService": true,
+    "size": "m",
+    "row": 2
+  },
+  {
+    "code": "CapsLock",
+    "isService": true,
+    "size": "l",
+    "row": 3
+  },
+  {
+    "code": "KeyA",
+    "isService": false,
+    "size": "s",
+    "row": 3
+  },
+  {
+    "code": "KeyS",
+    "isService": false,
+    "size": "s",
+    "row": 3
+  },
+  {
+    "code": "KeyD",
+    "isService": false,
+    "size": "s",
+    "row": 3
+  },
+  {
+    "code": "KeyF",
+    "isService": false,
+    "size": "s",
+    "row": 3
+  },
+  {
+    "code": "KeyG",
+    "isService": false,
+    "size": "s",
+    "row": 3
+  },
+  {
+    "code": "KeyH",
+    "isService": false,
+    "size": "s",
+    "row": 3
+  },
+  {
+    "code": "KeyJ",
+    "isService": false,
+    "size": "s",
+    "row": 3
+  },
+  {
+    "code": "KeyK",
+    "isService": false,
+    "size": "s",
+    "row": 3
+  },
+  {
+    "code": "KeyL",
+    "isService": false,
+    "size": "s",
+    "row": 3
+  },
+  {
+    "code": "Semicolon",
+    "isService": false,
+    "size": "s",
+    "row": 3
+  },
+  {
+    "code": "Quote",
+    "isService": false,
+    "size": "s",
+    "row": 3
+  },
+  {
+    "code": "Enter",
+    "isService": true,
+    "size": "l",
+    "row": 3
+  },
+  {
+    "code": "ShiftLeft",
+    "isService": true,
+    "size": "l",
+    "row": 4
+  },
+  {
+    "code": "KeyZ",
+    "isService": false,
+    "size": "s",
+    "row": 4
+  },
+  {
+    "code": "KeyX",
+    "isService": false,
+    "size": "s",
+    "row": 4
+  },
+  {
+    "code": "KeyC",
+    "isService": false,
+    "size": "s",
+    "row": 4
+  },
+  {
+    "code": "KeyV",
+    "isService": false,
+    "size": "s",
+    "row": 4
+  },
+  {
+    "code": "KeyB",
+    "isService": false,
+    "size": "s",
+    "row": 4
+  },
+  {
+    "code": "KeyN",
+    "isService": false,
+    "size": "s",
+    "row": 4
+  },
+  {
+    "code": "KeyM",
+    "isService": false,
+    "size": "s",
+    "row": 4
+  },
+  {
+    "code": "Comma",
+    "isService": false,
+    "size": "s",
+    "row": 4
+  },
+  {
+    "code": "Period",
+    "isService": false,
+    "size": "s",
+    "row": 4
+  },
+  {
+    "code": "Slash",
+    "isService": false,
+    "size": "s",
+    "row": 4
+  },
+  {
+    "code": "ArrowUp",
+    "isService": true,
+    "size": "s",
+    "row": 4
+  },
+  {
+    "code": "ShiftRight",
+    "isService": true,
+    "size": "l",
+    "row": 4
+  },
+  {
+    "code": "ControlLeft",
+    "isService": true,
+    "size": "m",
+    "row": 5
+  },
+  {
+    "code": "MetaLeft",
+    "isService": true,
+    "size": "m",
+    "row": 5
+  },
+  {
+    "code": "AltLeft",
+    "isService": true,
+    "size": "m",
+    "row": 5
+  },
+  {
+    "code": "Space",
+    "isService": true,
+    "size": "xxl",
+    "row": 5
+  },
+  {
+    "code": "AltRight",
+    "isService": true,
+    "size": "m",
+    "row": 5
+  },
+  {
+    "code": "ArrowLeft",
+    "isService": true,
+    "size": "s",
+    "row": 5
+  },
+  {
+    "code": "ArrowDown",
+    "isService": true,
+    "size": "s",
+    "row": 5
+  },
+  {
+    "code": "ArrowRight",
+    "isService": true,
+    "size": "s",
+    "row": 5
+  },
+  {
+    "code": "ControlRight",
+    "isService": true,
+    "size": "s",
+    "row": 5
+  }
+]
