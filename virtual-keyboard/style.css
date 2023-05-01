@@ -58,15 +58,19 @@
 .keyboard__key_size_s {
   width: 40px;
 }
+
 .keyboard__key_size_m {
   width: 50px;
 }
+
 .keyboard__key_size_l {
   width: 90px;
 }
+
 .keyboard__key_size_xl {
   width: 100px;
 }
+
 .keyboard__key_size_xxl {
   width: 370px;
 }
