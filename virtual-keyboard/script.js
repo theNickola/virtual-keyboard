@@ -64,15 +64,48 @@ requestKeys.onload = () => {
   textfield.focus();
 };
 
-const JsonURLLang = `assets/${localStorage.lang}.json`;
 const requestLang = new XMLHttpRequest();
+const requestSwitchLang = new XMLHttpRequest();
 let lang;
 let isCaps = false;
 let isShiftLeft = false;
 let isShiftRight = false;
+const pressed = new Set();
+const codesForSwitchLang = ['ControlLeft', 'AltLeft'];
+
+const switchLanguage = () => {
+  requestSwitchLang.open('get', `assets/${localStorage.lang}.json`, true);
+  requestSwitchLang.send();
+};
+requestSwitchLang.onload = () => {
+  lang = JSON.parse(requestSwitchLang.responseText);
+
+  let j = 0;
+  for (let i = 0; i < arrayKeys.length; i += 1) {
+    if (lang[j]) {
+      const {
+        code,
+        value,
+        valueShift,
+        isLetter,
+      } = lang[j];
+
+      if (code === arrayKeys[i].code) {
+        arrayKeys[i].value = value;
+        arrayKeys[i].valueShift = valueShift;
+        arrayKeys[i].isLetter = isLetter;
+        j += 1;
+      }
+    }
+  }
+
+  for (let i = 0; i < arrayKeys.length; i += 1) {
+    arrayKeys[i].domElement.innerText = arrayKeys[i].value;
+  }
+};
 
 const loadLanguage = () => {
-  requestLang.open('get', JsonURLLang, true);
+  requestLang.open('get', `assets/${localStorage.lang}.json`, true);
   requestLang.send();
 };
 
@@ -123,6 +156,18 @@ requestLang.onload = () => {
 
   document.addEventListener('keydown', (e) => {
     const currentBtn = document.getElementById(e.code);
+    pressed.add(e.code);
+    let countKeysForSwitchLang = 0;
+    for (let i = 0; i < codesForSwitchLang.length; i += 1) {
+      if (pressed.has(codesForSwitchLang[i])) {
+        countKeysForSwitchLang += 1;
+      }
+    }
+    if (countKeysForSwitchLang === 2 && pressed.size === 2) {
+      localStorage.lang = localStorage.lang === 'EN-en' ? 'RU-ru' : 'EN-en';
+      switchLanguage();
+      console.log(localStorage.lang);
+    }
     if (currentBtn) {
       currentBtn.classList.add('keyboard__key_active');
       const isServiceCurrentBtn = keys.filter((el) => el.code === e.code)[0].isService;
@@ -224,6 +269,7 @@ requestLang.onload = () => {
   document.addEventListener('keyup', (e) => {
     const currentBtn = document.getElementById(e.code);
     keyUp(currentBtn);
+    pressed.delete(e.code);
   });
 
   let mouseClickBtn;
