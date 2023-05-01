@@ -221,39 +221,29 @@ requestLang.onload = () => {
     }
   });
 
-  document.querySelector('body').addEventListener('mousedown', (e) => {
+  let mouseClickBtn;
+  document.body.addEventListener('mousedown', (e) => {
     const currentBtn = e.target;
+    if (mouseClickBtn) mouseClickBtn.classList.remove('keyboard__key_active');
+    mouseClickBtn = currentBtn;
     if (currentBtn.classList.contains('keyboard__key')) {
       currentBtn.classList.add('keyboard__key_active');
-      textfield.setRangeText(
-        currentBtn.innerText,
-        textfield.selectionStart,
-        textfield.selectionStart,
-      );
-      textfield.selectionStart += currentBtn.innerText.length;
-      textfield.focus();
+      if (!currentBtn.classList.contains('keyboard__key_type_service')) {
+        textfield.setRangeText(
+          currentBtn.innerText,
+          textfield.selectionStart,
+          textfield.selectionStart,
+        );
+        textfield.selectionStart += currentBtn.innerText.length;
+        textfield.focus();
+      }
     }
   });
 
-  const zzz = document.createElement('span');
-  zzz.classList.add('keyboard__key', 'keyboard__key_size_s');
-  zzz.id = 'KeyZ';
-  zzz.innerText = 'z';
-  document.body.append(zzz);
-  zzz.addEventListener('mousedown', (e) => {
-    const currentBtn = e.target;
-    currentBtn.classList.add('keyboard__key_active');
-    textfield.setRangeText(
-      currentBtn.innerText,
-      textfield.selectionStart,
-      textfield.selectionStart,
-    );
-    textfield.selectionStart += currentBtn.innerText.length;
-    textfield.focus();
-  });
-  zzz.addEventListener('mouseup', (e) => {
-    const currentBtn = e.target;
-    currentBtn.classList.remove('keyboard__key_active');
+  document.body.addEventListener('mouseup', () => {
+    if (mouseClickBtn.classList.contains('keyboard__key')) {
+      mouseClickBtn.classList.remove('keyboard__key_active');
+    }
   });
 };
 
