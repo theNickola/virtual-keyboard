@@ -42,7 +42,7 @@
   font-weight: 600;
   cursor: pointer;
   user-select: none;
-  transition: .15s;
+  transition: .3s;
 }
 .keyboard__key_type_service {
   background: #6c6cff;
@@ -71,4 +71,5 @@
   color: #f0ffff;
   border-radius: 20px;
   opacity: 0.5;
+  background: #2929ff;
 }
