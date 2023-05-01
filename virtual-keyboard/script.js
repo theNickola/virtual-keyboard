@@ -68,6 +68,8 @@ const JsonURLLang = `assets/${localStorage.lang}.json`;
 const requestLang = new XMLHttpRequest();
 let lang;
 let isCaps = false;
+let isShiftLeft = false;
+let isShiftRight = false;
 
 const loadLanguage = () => {
   requestLang.open('get', JsonURLLang, true);
@@ -111,6 +113,17 @@ requestLang.onload = () => {
 
   document.addEventListener('keydown', (e) => {
     const currentBtn = document.getElementById(e.code);
+    const downShift = () => {
+      for (let i = 0; i < arrayKeys.length; i += 1) {
+        if (arrayKeys[i].isLetter) {
+          const shiftValue = arrayKeys[i].domElement.innerText.toUpperCase();
+          arrayKeys[i].domElement.innerText = shiftValue;
+        } else
+        if (!arrayKeys[i].isService) {
+          arrayKeys[i].domElement.innerText = arrayKeys[i].valueShift;
+        }
+      }
+    };
     if (currentBtn) {
       currentBtn.classList.add('keyboard__key_active');
       const isServiceCurrentBtn = keys.filter((el) => el.code === e.code)[0].isService;
@@ -146,10 +159,12 @@ requestLang.onload = () => {
             textfield.setRangeText('\n', textfield.selectionStart, textfield.selectionStart, 'end');
             break;
           case 'ShiftRight':
-            textfield.setRangeText('RS', textfield.selectionStart, textfield.selectionStart, 'end');
+            downShift();
+            isShiftRight = true;
             break;
           case 'ShiftLeft':
-            textfield.setRangeText('LS', textfield.selectionStart, textfield.selectionStart, 'end');
+            downShift();
+            isShiftLeft = true;
             break;
           case 'CapsLock':
             if (isCaps) {
@@ -179,8 +194,26 @@ requestLang.onload = () => {
   });
   document.addEventListener('keyup', (e) => {
     const currentBtn = document.getElementById(e.code);
+    if (isShiftLeft) {
+      document.getElementById('ShiftLeft').classList.remove('keyboard__key_active');
+      isShiftLeft = false;
+    }
+    if (isShiftRight) {
+      document.getElementById('ShiftRight').classList.remove('keyboard__key_active');
+      isShiftRight = false;
+    }
     if (currentBtn && currentBtn.id !== 'CapsLock') {
       currentBtn.classList.remove('keyboard__key_active');
+    }
+    if (currentBtn.id === 'ShiftLeft' || currentBtn.id === 'ShiftRight') {
+      for (let i = 0; i < arrayKeys.length; i += 1) {
+        if (arrayKeys[i].isLetter && !isCaps) {
+          arrayKeys[i].domElement.innerText = arrayKeys[i].value;
+        } else
+        if (!arrayKeys[i].isService && !arrayKeys[i].isLetter) {
+          arrayKeys[i].domElement.innerText = arrayKeys[i].value;
+        }
+      }
     }
   });
 
